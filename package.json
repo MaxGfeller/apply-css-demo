@@ -1,0 +1,36 @@
+{
+  "name": "apply-css-demo",
+  "version": "1.0.0",
+  "description": "Demo for apply-css, using bootstrap + themes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -t brfs -d app.js > bundle.js && cat node_modules/bootstrap/dist/css/bootstrap.min.css > bundle.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaxGfeller/apply-css-demo.git"
+  },
+  "keywords": [
+    "apply",
+    "css",
+    "scoped",
+    "scoped",
+    "css",
+    "demo"
+  ],
+  "author": "Max Gfeller <max.gfeller@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaxGfeller/apply-css-demo/issues"
+  },
+  "homepage": "https://github.com/MaxGfeller/apply-css-demo",
+  "dependencies": {
+    "apply-css": "^1.0.0",
+    "bootstrap": "^3.3.1"
+  },
+  "devDependencies": {
+    "brfs": "^1.2.0",
+    "browserify": "^8.0.3"
+  }
+}
